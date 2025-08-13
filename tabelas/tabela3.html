@@ -16,9 +16,11 @@
             padding-top: 5px;
         }
 
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
 
@@ -32,6 +34,11 @@
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color:grey;
         }
         tbody > tr:nth-child(even) {   /* (2n)*/
             background-color: lightgray;
