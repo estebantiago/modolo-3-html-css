@@ -19,10 +19,19 @@
         td,
         th {
             border: 1px solid black;
+            padding: 5px;
         }
         .head {
             background-color: grey;
             color: white;
+        }
+        .destaque {
+            background-color: grey;
+            color: white;
+            font-weight: bolder;
+        }
+        .destaque > td {
+            text-align: center;
         }
         
         .nota {
@@ -31,15 +40,9 @@
         .head-media {
             text-align: left;
             padding-left: 5px;
-            background-color: grey;
-            color: white;
+            
         }
-        .nota-media {
-            text-align: center;
-            background-color: grey;
-            color: white;
-            font-weight: bolder;
-        }
+        
     </style>
 </head>
 
@@ -62,7 +65,7 @@
         <tbody>
             <tr>
 
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -87,16 +90,16 @@
                 <td class="nota">0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4" class="head-media">Média de Exatas</th>
-                <td class="nota-media">0.0</td>
+            <tr class="destaque">
+                <th colspan="4" class="head-media"scope="row">Média de Exatas</th>
+                <td>0.0</td>
             </tr>
 
 
 
             <tr>
 
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -108,9 +111,9 @@
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
             </tr>
-            <tr>
-                <th colspan="4" class="head-media">Média de Humanas</th>
-                <td class="nota-media">0.0</td>
+            <tr class="destaque">
+                <th colspan="4" class="head-media" scope="row">Média de Humanas</th>
+                <td>0.0</td>
             </tr>
         </tbody>
 
